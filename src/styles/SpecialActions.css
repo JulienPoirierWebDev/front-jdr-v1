@@ -1,0 +1,64 @@
+.specialActions-container {
+    margin-top: 20px;
+
+}
+
+.specialActions-headers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.specialActions-container .div-title:hover{
+    color: var(--color-main-2);
+}
+
+@media screen and (max-width: 1600px)
+{
+
+    .div-title{
+        font-size: 1rem !important;
+    }
+
+}
+
+.specialActions-headers-active {
+    text-decoration: underline black 3px;
+}
+
+.specialActions-options-container {
+    height: 250px;
+    background-color: var(--color-main-1);
+    overflow: scroll;
+    padding: 5px;
+    text-align: justify;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.specialActions-options-container::-webkit-scrollbar {
+    display: none;
+}
+
+.specialActions-options {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.specialActions-target-div {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.specialActions-options-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.specialActions-button-submit {
+    background-color: transparent !important;
+    height: 80%;
+}

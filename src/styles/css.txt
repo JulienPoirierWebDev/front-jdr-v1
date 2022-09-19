@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Berkshire+Swash&family=Roboto&family=Roboto+Slab&display=swap');
+
+:root {
+    --color-submit-button-1: brown;
+    --color-submit-button-2: saddlebrown;
+    --color-main-1:#AB911D;
+    --font1:"Berkshire Swash", "Helvetica Neue",fantasy;
+    --font2: "Roboto Slab", "Helvetica Neue",fantasy;
+    --font3:"Arial Black", "Helvetica Neue",fantasy;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.body-wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.app-wrapper {
+    box-sizing: border-box;
+    padding: 4vh;
+    margin: auto;
+
+}
+
+.app-container {
+    box-sizing: border-box;
+}
+
+.board-wrapper {
+    margin-top: 60px;
+    box-sizing: border-box;
+    border-radius: 70px;
+    padding: 25px 25px;
+
+}
+
+.board-container {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 60px;
+    padding: 2% 2%;
+    font-family: "Roboto", Serif, serif;
+
+}
+
+.board-paper {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.title-container {
+    position: absolute;
+    width: 100vw;
+}
+
+.title {
+    color: var(--color-main-1);
+    font-size: 150px;
+    position: relative;
+    top: -200px;
+    right: 0;
+    font-family: "Berkshire Swash", Serif;
+    text-shadow: 2px 0 0 #FFF, 2px 2px 0 #FFF, 0 2px 0 #FFF, -2px 2px 0 #FFF, -2px 0 0 #FFF, -2px -2px 0 #FFF, 0 -2px 0 #FFF, 2px -2px 0 #FFF;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+.div-title {
+    color: var(--color-main-1);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font2);
+}
+
+.submit-button-wooden{
+    color: wheat;
+    border:  none;
+    padding: 8px;
+    width: 120px;
+    height: 40px;
+    margin: 10px auto;
+    font-family: var(--font3);
+    cursor: auto;
+
+}
+
+.form-input {
+    display: block;
+    width: 80%;
+    background-color: darkgrey;
+    border-radius: 15px;
+    padding-right: 25px;
+    border: sandybrown 4px solid;
+    height: 15px;
+    text-align: center
+}
+
+.form-label {
+    display: block;
+    width: 80%;
+}
+
+.form-div, .form {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.presentation-container{
+
+}
+
+.presentation-container>p{
+    margin: 4px 0;
+    text-align: center;
+}
+
+.footer-container {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+
+@keyframes intro {
+    0%   {margin-bottom:100vh}
+    100% {margin-bottom: 0}
+}
+/*
+.container-flex {
+    display: flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.max{
+    width: 100%;
+    height: 100%;
+}
+
+.w80{
+    width: 80%;
+    height: 80%;
+}
+
+.border {
+   border: 2px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerItem {
+    align-items: center;
+}
+
+.marginauto{
+    margin: auto 0;
+}
+
+*/

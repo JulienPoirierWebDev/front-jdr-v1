@@ -1,0 +1,86 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+.character-caracteristics-group {
+    display: flex;
+    flex-wrap:wrap;
+    margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .character-caracteristics-group {
+        margin-top: 20px;
+    }
+}
+
+.character-caracteristics-one-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width: 33%;
+    align-content: center;
+    margin-top: 15px;
+
+}
+
+.character-caracteristics-one-label {
+    display: block;
+    width: 40%;
+    margin: auto 0;
+
+}
+
+.character-caracteristics-one-input {
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    border-radius: 100%;
+    text-align: center;
+    border: 5px solid var(--color-main-1);
+    }
+
+.character-caracteristics-one-input:active,
+.character-caracteristics-one-input:focus
+{
+    border: 5px solid var(--color-main-3);
+    outline: red;
+}
+
+.character-caracteristics-stock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 30%;
+    margin:10px auto;
+}
+
+.character-caracteristics-stock-container  p {
+    text-align: center;
+}
+
+.character-caracteristics-stock-value {
+
+    border-radius: 100%;
+    background-color: var(--color-main-1);
+    border: 5px solid var(--color-main-2);
+    color: var(--color-main-2);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+
+}

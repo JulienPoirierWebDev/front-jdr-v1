@@ -1,0 +1,57 @@
+.playablecharacters {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+}
+
+.playablecharacters-slot {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-main-1);
+    background-color: var(--color-main-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.playablecharacters-slot-avatar-div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: black;
+    border: 5px solid wheat;
+    margin: 0 auto;
+}
+
+.playablecharacters-slot-avatar{
+    width: 100%;
+}
+
+.playablecharacters-slot-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.playablecharacters-slot-group > p {
+    margin: 0;
+    padding: 4px;
+}
+
+@media screen and (max-width: 1280px) {
+    .playablecharacters-slot-avatar-div {
+        width: 40px;
+        height: 40px;
+    }
+    .playablecharacters-slot-group > p {
+        padding: 2px;
+        font-size: 0.8rem;
+    }
+    .playablecharacters {
+    margin-top: 20px;
+    }
+    }

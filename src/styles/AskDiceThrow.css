@@ -1,0 +1,81 @@
+.askdice-container {
+    position: relative;
+    width: 97%;
+    margin: auto;
+}
+
+.askdice-main:hover{
+    color: var(--color-main-1);
+    text-decoration: underline;
+}
+
+.askdice-group {
+    box-sizing: border-box;
+    position: absolute;
+    height: 400px;
+    border: 5px solid var(--color-main-1);
+    border-radius: 20px;
+    top: -400px;
+    width: 100%;
+    background-color: wheat;
+}
+
+.askdice-action-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.askdice-action-description {
+    padding: 10px;
+    display: block;
+}
+
+.askdice-action-input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.askdice-action-label:hover {
+    font-weight: bold;
+}
+
+.askdice-writing-textarea-input {
+    height: 90%;
+    width: 90%;
+    resize: none;
+    margin: 5px auto 0 auto;
+}
+
+.askdice-closebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-main-1);
+    border: none;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.askdice-closebutton:hover{
+    font-weight: bold;
+}
+
+.askdice-button-submit {
+    background-color: transparent;
+    color: wheat;
+    border: none;
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+.askdice-button-submit:hover {
+    filter: contrast(140%);
+}

@@ -1,0 +1,96 @@
+
+.login-container {
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .login-container {
+        display: initial;
+    }
+
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.div-title {
+    color: var(--color-main-1);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font2);
+    margin-bottom: 12px;
+}
+
+.submit-button-wooden{
+    display: block;
+    color: wheat;
+    border:  none;
+    padding: 8px;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    font-family: var(--font3);
+    font-size: 1rem;
+    cursor: auto;
+}
+
+.submit-button-wooden:hover {
+    filter: contrast(140%);
+}
+
+.form > .submit-button-wooden {
+    margin-top: 2rem;
+}
+
+.form-input {
+    display: block;
+    width: 85%;
+    background-color: darkgrey;
+    border-radius: 15px;
+    padding-right: 25px;
+    border: sandybrown 4px solid;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    outline: none;
+}
+
+.form-label {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    font-family: var(--font2);
+    font-size: 1.2rem;
+
+}
+
+.form-div, .form {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.presentation-container{
+    font-size: 1.1rem;
+}
+
+
+
+.presentation-container>p{
+    margin: 4px 0;
+    text-align: center;
+}
+
+.footer-container {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+
+@keyframes intro {
+    0%   {margin-bottom:100vh}
+    100% {margin-bottom: 0}
+}

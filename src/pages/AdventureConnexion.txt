@@ -1,0 +1,30 @@
+import React, {useEffect, useState} from "react";
+import requests from "../services/requests";
+import functions from "../services/functions";
+import api_roliste from "../services/api_roliste";
+import {useNavigate, useParams} from "react-router-dom";
+import axios from "axios";
+
+const AdventureConnexion = () => {
+    const {mjid} = useParams()
+    const {adventurename} = useParams();
+
+    const init = async () => {
+        const gameMaster = await api_roliste.getAllData(requests.requestAdventure);
+        let log = gameMaster.data['hydra:member'].map(({id}, aventure) => {
+            <p key={id}>aventure</p>
+        })
+        let adventure = gameMaster.data['hydra:member'].filter(adventure => (adventure.user == mjid && adventure.title == adventurename));
+        console.log("Aventure ---->")
+        console.log(adventure)
+        console.log("<----- aventure")
+        return [log, adventure]
+    }
+
+        init();
+
+    return (
+        "Bonjour")
+}
+
+export default AdventureConnexion;

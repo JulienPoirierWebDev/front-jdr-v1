@@ -1,0 +1,158 @@
+.chatzone-container {
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.chatzone-messages-container {
+    height: 400px;
+    overflow: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chatzone-messages-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chatzone-writing-input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.chatzone-writing-label-group {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.chatzone-writing-label {
+    width: 40%;
+}
+
+.chatzone-writing-label-active {
+    text-decoration: underline black 3px;
+    text-decoration-skip-ink: none;
+    width: 40%;
+}
+
+.chatzone-writing-textarea-div {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chatzone-writing-select {
+    height: 50px;
+}
+
+.chatzone-writing-textarea-input {
+    height: 90%;
+    width: 90%;
+    resize: none;
+    margin: 5px auto 0 auto;
+}
+
+.chatzone-writing-textarea-button {
+    background-color: transparent;
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* MessageSlot Component */
+
+.messageslot-container {
+    padding: 1px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.messageslot-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.messageslot-content {
+    margin : 1%;
+    text-align: justify;
+}
+
+.message_player {
+    background-color: #FFFFFF80;
+}
+
+.message_system {
+    background-color: #00000080
+}
+
+.message_npc {
+    background-color: #AB911D80;
+}
+
+.private_message {
+    font-size:1.2rem;
+}
+
+/* For GM Chat Zone */
+
+.chatzone-freerole-label {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.chatzone-freerole-label:hover{
+    font-weight: bold;
+}
+
+.chatzone-freerole-choice-div {
+    width: 50%;
+    margin: auto;
+}
+.chatzone-freerole-choice-div > * {
+    margin: 10px;
+}
+
+.npc-creation-div {
+    margin: 10px 0;
+    position: relative;
+}
+
+.npc-creation-label {
+    position: relative;
+    left: 40px;
+}
+
+.npc-creation-input {
+    position: absolute;
+    right: 20px;
+}
+
+.npc-creation-textarea-div{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.npc-creation-textarea-input {
+    width: 90%;
+    height: 50%;
+    resize: none;
+    margin: 5px auto 0 auto;
+}
+
+.npc-creation-button-submit {
+    border:none;
+    background-color: transparent;
+    color: wheat;
+    width: 200px;
+    margin: 5px auto;
+}

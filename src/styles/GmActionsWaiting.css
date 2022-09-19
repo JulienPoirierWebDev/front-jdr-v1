@@ -1,0 +1,73 @@
+.actionswaiting-container {
+    border: 5px solid var(--color-main-1);
+    border-radius: 0 0 20px 20px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.actionswaiting-title {
+    margin: 5px auto;
+}
+
+.actionswaiting-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.actionswaiting-group::-webkit-scrollbar {
+    display: none;
+}
+
+
+.actionslot-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border: 5px solid var(--color-main-2);
+    margin: 0 5px;
+    border-radius: 20px;
+    background-color: wheat;
+}
+
+.actionslot-container-active {
+    width: 600px;
+    height: 250px;
+
+}
+
+.actionslot-title {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.actionslot-description {
+    text-align: justify;
+    margin: 0 5%;
+}
+
+.actionslot-description-name {
+    font-weight: bold;
+}
+
+.gamezone-row {
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.actionslot-button {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: transparent;
+    width: 35%;
+    height: 30px;
+    margin-top: 10px;
+}

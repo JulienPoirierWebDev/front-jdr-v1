@@ -1,0 +1,49 @@
+.character-creation-resume{
+    display: grid;
+    grid-template-columns:50% 50%;
+
+}
+
+
+.character-creation-special-action{
+    display: grid;
+    grid-template-columns:50% 50%;
+
+}
+
+@media screen and (max-width: 1280px) {
+    .character-creation-special-action {
+        display: initial;
+    }
+
+    .character-creation-special-action > * {
+        margin-top: 40px;
+    }
+
+
+    .character-creation-resume {
+        display: initial;
+    }
+}
+
+.full {
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.character-creation-submit {
+    margin-top: 30px;
+    width: 60%;
+    height: 7rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.character-creation-submit:hover {
+filter: brightness(150%);
+}
+

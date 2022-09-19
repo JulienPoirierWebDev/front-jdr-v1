@@ -1,0 +1,49 @@
+
+
+.adventure-creation-form {
+    display: grid;
+    grid-template-columns:60% 40%;
+
+}
+
+.adventure-creation-form-alert {
+    margin: auto 0;
+}
+
+
+.invalid, .valid {
+    color: var(--color-main-2);
+    background-color: var(--color-main-1);
+    padding: 5px;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 3px solid var(--color-main-2);
+
+}
+
+.adventure-creation-invitation-div, .adventure-creation-description-div {
+    margin: 20px auto;
+}
+
+.adventure-creation-invitation-div {
+    height: 70px;
+}
+
+.adventure-creation-description-input {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 60px;
+}
+
+.adventure-creation-invitation-link {
+    text-align: center;
+}
+
+.adventure-creation-button {
+    width: 25%;
+    height: 15%;
+    font-size: 1.5rem;
+}

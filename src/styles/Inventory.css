@@ -1,0 +1,41 @@
+.inventory-container {
+    position: relative;
+}
+
+.inventory-main:hover{
+    color: var(--color-main-1);
+    text-decoration: underline;
+}
+
+.inventory-group {
+    box-sizing: border-box;
+    position: absolute;
+    height: 250px;
+    border: 5px solid var(--color-main-1);
+    border-radius: 20px;
+    top: -250px;
+    width: 100%;
+    background-color: wheat;
+}
+
+.inventory-item-content {
+    width: 80%;
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.inventory-item-button {
+    text-align: center;
+    position: absolute;
+    width: 80px;
+    padding: 5px;
+    color: wheat;
+    right: -10%;
+    background-color: transparent;
+    border: none;
+}
+
+.inventory-item-button:hover {
+    filter: contrast(140%);
+}

@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.title-container {
+    height: 1em;
+    pointer-events: none;
+}
